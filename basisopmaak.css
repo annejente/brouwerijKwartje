@@ -1,0 +1,229 @@
+body { 
+	font-family: poppins, acumin variable concept, sans-serif;
+	line-height: 1.4 em;
+	background-color: #CCAAA6;
+	background-attachment: scroll;
+	font-size: 12px;
+	left: 10px;
+}
+
+/* Zorgt voor de uitlijning van de paragraaf */
+p {
+	text-align: left;
+	font-size: 12px
+}
+
+/* Bepaalt de header grootte */
+main {
+	text-align: center;
+	background: #CCAAA6;
+}
+
+h1 {
+	font-family: Nexa;
+	margin-top: 0px;
+	font-size: 200%;
+	padding: 20px;
+	background-color: #DBC6E1;
+}
+
+section.Home > h1 {
+	background-color: #CCAAA6;
+}
+
+/* Bepaalt de tekstgrootte van h2 teksten */
+h2 {
+	font-family: Nexa;
+	font-size: 125%;
+	margin: 1.5px;
+	text-align: left;
+	
+}
+
+/* Bepaalt de tekstgrootte van h3 teksten */
+h3 {	
+	font-family: Nexa;
+	font-size: 14px;
+	margin: 1.5px;
+	text-align: left;
+}
+
+/* bepaalt de grootte van de h4 teksten */
+h4 {
+	font-family: poppins;
+	margin: 10px;
+	text-align: right;
+	font-size: 12px
+}
+
+
+/* Zorgt voor de opmaak van het logo */
+.logo {
+	width: 15%;
+	float: center;
+	margin-bottom: 5px;
+}
+
+/* Geeft de algemene opmaak van afbeeldingen aan */
+img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* specificeert de afbeelding op de contact pagina */
+img.contact {
+	width: 90%;
+	height: 500 px;
+	border: 1px solid #707070;
+}
+
+/* specificeert de afbeelding op de over ons pagina */
+img.overOns {
+	width: 80%;
+}
+
+/* specificeert de afbeeldingen op de bier pagina */
+img.Bieren {
+	width: 75%;
+	height: 250px;
+}
+
+
+nav {
+	grid-area: nav;
+	padding-bottom: 0px;
+	margin: 0px;
+}
+
+/* Geeft de borders aan die boven en onder het hamburgermenu staan */
+.menutoggle {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 12px;
+	margin: 0px;
+}
+
+/* Zorgt voor de juiste indeling van de website */
+nav.website {
+	grid-area: website;
+}
+
+/* Geeft aan dat het standaard menu niet altijd zichtbaar moet zijn */
+nav.website > ul {
+	display: none;
+}
+
+/* Geeft de opmaak van de footer */
+footer {
+	border-top: 1px solid black;
+	background: #CCAAA6;
+	margin: 10px;	
+}
+
+/* specificeert de plaatsing van de afbeeldingen in de footer */
+div#image1 {
+	width: 10%;
+	margin: 0 0 0 30%;
+
+}
+
+#image2 {
+	width: 10%;
+	margin: -17% 0 0 40%;
+
+}
+
+#image3 {
+	width: 10%;
+	margin: -14% 0 0 50%;
+}
+
+footer.img {
+	width: 100%
+}
+
+.Nix18 {
+	width: 100px;
+	height: 40px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	float: center;
+}
+
+/* Geeft de opmaak van het hamburgermenu */
+#hamburger {
+	color: black;
+}
+
+/* Zorgt ervoor dat je geen menu ziet op het moment dat de hamburger niet is ingeklikt */
+.inactive {
+  display: none;
+}
+
+/* geeft de opmaak op de contactpagina */
+section.tekstContact {
+	text-align: left;
+	margin: 20px;
+}
+
+section.andere {
+	text-decoration: underline;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+/* Geeft de opmaak van de reviewvelden */
+input[type="text"] {
+	box-sizing: border-box;
+	background-color: #CCAAA6;
+	border: 1px solid white;
+	padding: 12px;
+	margin: 10px;
+	width: 70%;
+	
+}
+
+textarea#msg {
+    height: 200px;
+    width: 300px;
+    background-color: #CCAAA6;
+	border: 1px solid white;
+	text-align: center;
+}
+
+input[placeholder] {
+	color: black;
+	text-align: center;
+}
+
+input#name {
+    width: 300px;
+}
+
+/* Geeft de algemene opmaak van de buttons over de pagina */
+button {
+	border-radius: 0.7em;
+	background-color: #D9EADE;
+	border: none;
+}
+
+	
+section.MeerReviews {
+	margin-left: 40px;
+}
+
+/* Zorgt ervoor dat je op pagina 1 geen grote hoofdtekst ziet */
+nav.off > h1 {
+	display: none;
+}
+
+
+.Mail {
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+

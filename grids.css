@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+  
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"nav"
+		"main"
+		"content1"
+		"content2"
+		"content3"
+		"content4"
+		"sidebar"
+		"footer";
+}
+
+nav {
+	grid-area: nav;
+}
+
+.website {
+	grid-area: website;
+}
+
+main {
+	grid-area: main;
+}
+
+#sidebar {
+	grid-area: sidebar;    
+}
+
+#content1 {
+	grid-area: content1;
+}
+
+#content2{
+	grid-area: content2;
+}
+
+#content3 {
+	grid-area: content3;
+}
+
+#content4 {
+	grid-area: content4;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.website > ul {
+    display:none;
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.container {
+		display: grid;
+		height: 100vh;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"main main main"
+			"website website website"
+			"content1 content1 content1"
+			"content2 content3 content4"
+			"sidebar sidebar sidebar"
+			"footer footer footer";
+	}
+	
+	ul li {
+		display: inline;
+		float: left;
+    	align-items: center;
+    	font-size: 1em;
+    	padding: 5px;
+	}
+	
+	.footertekst {
+		display: flex;
+		margin-left: 20px;	
+	}
+	
+	#hamburger {
+    	display: none;
+    }
+    
+    .website > ul { 
+    	display:block;
+    }
+    
+    nav.website {
+    	background: rgb(46,139,87);
+	}
+    
+    div#sidebar h3 {
+    text-align: left;
+	} 
+}
+
+
+
+
+
+@media only screen and (min-width: 1020px) {
+	.container {
+		display: grid;
+		height: 100vh;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"main main main main"
+			"website website website website"
+			"content1 content1 content1 sidebar"
+			"content2 content3 content4 sidebar"
+			"footer footer footer footer";
+		}
+	#sidebar div {
+    	display: flex;
+    	flex-direction: column;
+	}
+	
+	#hamburger {
+		display: none;
+	}
+	
+	.website {
+		display: block;
+	}
+	
+	p {
+		font-size: 1em;
+	}
+	
+	main {
+		font-size: xx-large;
+	}
+    .website > ul { 
+    	display:block;
+    }
+}
+    
